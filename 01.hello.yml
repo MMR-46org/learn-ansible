@@ -11,3 +11,4 @@
      -  name: say bye
         ansible.builtin.debug:
           msg: bye!!
+
