@@ -8,5 +8,5 @@
 
      -  name: say hii to ram
         ansible.builtin.debug:
-          name: hey, ram
+          msg: hey, ram
           when: user == "ram"
