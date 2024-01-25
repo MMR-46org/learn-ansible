@@ -4,9 +4,9 @@
      -  name: say hai to ram
         ansible.builtin.debug:
           msg: hey, john
-          when: user == "john"
+        when: user == "john"
 
      -  name: say hii to ram
         ansible.builtin.debug:
           msg: hey, ram
-          when: user == "ram"
+        when: user == "ram"
