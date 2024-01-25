@@ -1,5 +1,5 @@
 -  name: demo on condition
-   hosts: all
+   hosts: localhost
    tasks:
      -  name: say hai to ram
         ansible.builtin.debug:
