@@ -1,0 +1,12 @@
+-  name: demo on rescue
+   hosts: localhost
+   tasks:
+     -  name: block
+        block:
+          -  name: run shell command
+             ansible.builtin.shell: exit 1
+
+        rescue:
+          -  name: say hai
+             ansible.builtin.debug:
+               msg: hai
