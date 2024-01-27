@@ -1,0 +1,12 @@
+-  name: demo in ignore
+   hosts: localhost
+   tasks:
+     -  name: run shell command
+        ansible.builtin.shell: exit 1
+        ignore_errors: true
+
+
+
+     -  name: say hai
+        ansible.builtin.debug:
+          msg: hai

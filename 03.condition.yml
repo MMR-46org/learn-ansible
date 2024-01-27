@@ -1,7 +1,7 @@
 -  name: demo on condition
    hosts: localhost
    tasks:
-     -  name: say hai to ram
+     -  name: say hai to john
         ansible.builtin.debug:
           msg: hey, john
         when: user == "john"
